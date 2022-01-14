@@ -62,7 +62,22 @@ public class MenuItem {
      */
 
     public String getPrice(int width) {
-        return "stub";
+	String price = this.getPrice();
+	int diff = price.length() - width;
+	String result = "";
+	if (diff < 0) {
+	    throw TooNarrowException();
+	} else if (diff == 0) {
+	    result = price;
+	} else {
+	    String space = "";
+	    for (int x = 0; x < diff; x++) {
+		space += " ";
+	    }
+	    result = space + price;
+	}
+
+        return result;
     }
 
     /**
