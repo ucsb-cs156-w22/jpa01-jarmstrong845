@@ -9,6 +9,11 @@ public class MenuItemTest {
 
     private MenuItem smallPokeBowl;
 
+    @Test
+    public void test_getCategory() {
+	smallPokeBowl = new MenuItem("Small Poke Bowl", 1049, "Poke Bowls");
+	assertEquals("Poke Bowls", smallPokeBowl.getCategory());
+    }
 
     @Test
     public void test_getPrice() {
