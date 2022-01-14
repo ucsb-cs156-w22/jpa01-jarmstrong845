@@ -26,7 +26,7 @@ public class MenuItem {
      */
 
     public String getCategory() {
-	return "stub";
+	return category;
     }
 
     /**
