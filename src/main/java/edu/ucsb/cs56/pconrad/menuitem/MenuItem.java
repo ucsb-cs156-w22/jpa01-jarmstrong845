@@ -16,7 +16,9 @@ public class MenuItem {
 
 
     public MenuItem(String name, int priceInCents, String category) {
-        // stub
+        this.name = name;
+	this.priceInCents = priceInCents;
+	this.category = category;
     }
 
     /**
@@ -41,7 +43,12 @@ public class MenuItem {
      */
 
     public String getPrice() {
-        return "stub";
+	int dollars = priceInCents / 100;
+	int cents = priceInCents % 100;
+	String S_dollars = Integer.toString(dollars);
+	String S_cents = Integer.toString(cents);
+	String price = "$" + S_dollars + "." + S_cents;
+        return price;
     }
 
     /**
