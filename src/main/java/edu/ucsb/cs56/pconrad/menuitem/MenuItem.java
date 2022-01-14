@@ -65,7 +65,7 @@ public class MenuItem {
 	String price = this.getPrice();
 	int diff = price.length() - width;
 	String result = "";
-	if (diff < 0) {
+	if (diff > 0) {
 	    throw new TooNarrowException();
 	} else if (diff == 0) {
 	    result = price;
