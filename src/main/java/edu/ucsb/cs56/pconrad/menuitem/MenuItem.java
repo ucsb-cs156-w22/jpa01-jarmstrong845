@@ -20,6 +20,22 @@ public class MenuItem {
     }
 
     /**
+     * Returns the category of the menu item
+     */
+
+    public String getCategory() {
+	return "stub";
+    }
+
+    /**
+     * Returns the name of the menu item
+     */
+
+    public String getName() {
+	return "stub";
+    }
+
+    /**
      * Returns the price, formatted as a string with a $.
      * For example "$0.99", "$10.99", or "$3.50"
      */
@@ -40,6 +56,14 @@ public class MenuItem {
 
     public String getPrice(int width) {
         return "stub";
+    }
+
+    /**
+     * get the prince in cents only
+     */
+
+    public int getPriceInCents() {
+	return 314159;
     }
 
     /**
