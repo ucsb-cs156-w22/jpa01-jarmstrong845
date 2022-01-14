@@ -82,7 +82,9 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        return "stub";
+	String price = Integer.toString(priceInCents);
+	String result = name + "," + price + "," + category;
+        return result;
     }
 
 }
