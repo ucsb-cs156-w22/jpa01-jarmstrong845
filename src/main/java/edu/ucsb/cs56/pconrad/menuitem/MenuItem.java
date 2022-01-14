@@ -85,7 +85,7 @@ public class MenuItem {
      */
 
     public int getPriceInCents() {
-	return 314159;
+	return priceInCents;
     }
 
     /**
