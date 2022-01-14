@@ -34,7 +34,7 @@ public class MenuItem {
      */
 
     public String getName() {
-	return "stub";
+	return name;
     }
 
     /**
